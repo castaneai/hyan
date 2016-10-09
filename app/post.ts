@@ -1,4 +1,4 @@
 export class Post {
-  id: number;
-  thumbnailUrl: string;
+  id: number
+  thumbnail_url: string
 }

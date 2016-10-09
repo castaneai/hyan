@@ -7,15 +7,15 @@ import { PostDetailComponent } from './post-detail.component';
 const appRoutes: Routes = [
   {
     path: '',
-    redirectTo: '/post-list',
+    redirectTo: '/posts',
     pathMatch: 'full',
   },
   {
-    path: 'post-list',
+    path: 'posts',
     component: PostListComponent,
   },
   {
-    path: 'post/:id',
+    path: 'posts/:id',
     component: PostDetailComponent,
   },
 ];
