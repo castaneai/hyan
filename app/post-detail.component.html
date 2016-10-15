@@ -1,18 +1,26 @@
-<div *ngIf="post">
-  <h1>Post #{{ post.id }}</h1>
-</div>
+<div class="ui container" *ngIf="post">
+  <div class="ui divided grid">
+    <div class="ui row">
 
-<div class="ui segment">
-  <div class="ui left dividing rail">
-    <div class="ui segment">
-      Left Rail Content
+      <!-- main image -->
+      <div class="ui twelve wide column">
+        <div class="ui image rounded fluid">
+          <img src="{{ post.image_urls[0] }}">
+        </div>
+      </div>
+
+      <!-- sidebar -->
+      <div class="ui four wide column">
+        <h3><i class="icon tag"></i>Tags</h3>
+
+        <div class="ui list">
+          <div *ngFor="let tag of post.tags" class="item">
+            <a href="#desc"><i class="icon help"></i></a>
+            <a href="#{{ tag }}">{{ tag }}</a>
+          </div>
+        </div>
+      </div>
     </div>
+
   </div>
-  <div class="ui right dividing rail">
-    <div class="ui segment">
-      Right Rail Content
-    </div>
-  </div>
-  <p></p>
-  <p></p>
 </div>

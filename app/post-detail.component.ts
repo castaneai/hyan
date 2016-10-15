@@ -6,8 +6,10 @@ import { PostService } from './post.service'
 @Component({
     selector: 'post-detail',
     templateUrl: 'app/post-detail.component.html',
+    styleUrls: ['app/post-detail.component.css'],
 })
 export class PostDetailComponent implements OnInit {
+
   post: Post
 
   constructor(
