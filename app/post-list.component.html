@@ -1,5 +1,7 @@
-<div class="ui container vertical segment">
-  <div class="ui link cards stackable four column grid">
-    <post class="ui fluid card" *ngFor="let post of posts" [post]="post"></post>
+<div class="ui container">
+  <div class="ui four column grid stackable doubling">
+    <div class="column" *ngFor="let post of posts">
+      <post class="ui fluid card" [post]="post"></post>
+    </div>
   </div>
 </div>
